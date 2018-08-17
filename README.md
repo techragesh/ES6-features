@@ -133,3 +133,53 @@ console.log(stud2);
 ```
 
 ### SPREAD
+
+**Syntax is (...) **
+
+The spread syntax is just simple three dots like this ...
+It allows an iterable to expand in places where 0+ arguments are expected.
+
+```
+const num1 = [1, 2, 3];
+const num2 = [num1, 4];
+console.log(num2);
+
+**Output :** (2) [Array(3), 4] // Which is wrong
+
+I would like to expect the output like this [1,2,3,4]
+const num3 = [1, 2, 3];
+const num4 = [...num3, 4];
+console.log(num4);
+
+**Output :** (4) [1, 2, 3, 4] // Which is right
+```
+
+**With objects**
+
+```
+const student1 = [{ id: 1, name: "Dave" }];
+console.log(student1);
+
+**Output:** 0: {id: 1, name: "Dave"}length: 1__proto__: Array(0)
+
+const student2 = [
+  {
+    ...student1,
+    email: "dave@test.com",
+  },
+];
+console.log(student2);
+
+**Output:** 0:{id: 1, name: "Dave"}email:"dave@test.com"
+```
+
+**how spread with filters**
+I would like to remove 4 from the array
+
+```
+const num5 = [1, 2, 3, 4, 5];
+const num6 = [...num5.filter(n => n !== 4)];
+console.log(num6);
+
+**Output:** (4) [1, 2, 3, 5]
+```
