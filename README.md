@@ -8,12 +8,12 @@ This repository shows some ES6 features with simple examples
 
 **let** - let variables are block-scoped. we can overwrite.
 
-```
+<pre>
 const name = "Johan";
 name = "Dave";
 console.log(name);
 
-**`Output:`**
+<b>Output:</b>
 Uncaught TypeError: Assignment to constant //variable.
     at main.js:3
 
@@ -22,7 +22,7 @@ name2 = "Dave";
 console.log(name2);
 
 **OutPut:** Dave
-```
+</pre>
 
 Another example for const and let.
 
