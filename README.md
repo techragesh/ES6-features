@@ -13,7 +13,7 @@ const name = "Johan";
 name = "Dave";
 console.log(name);
 
-**Output:**
+**`Output:`**
 Uncaught TypeError: Assignment to constant //variable.
     at main.js:3
 
@@ -134,7 +134,7 @@ console.log(stud2);
 
 ### SPREAD
 
-**Syntax is (...) **
+**Syntax is (...)**
 
 The spread syntax is just simple three dots like this ...
 It allows an iterable to expand in places where 0+ arguments are expected.
