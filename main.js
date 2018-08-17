@@ -70,26 +70,26 @@
 
 //FOREACH
 
-// const students = ["Dave", "peter", "shyam"];
+/* const students = ["Dave", "peter", "shyam"];
 
-// students.forEach((stud, index) => {
-//   console.log(stud + index);
-// });
+students.forEach((stud, index) => {
+  console.log(stud + index);
+});
 
-// const std = students.map(student => student.slice(0, -1).toLocaleUpperCase());
+const std = students.map(student => student.slice(0, -1).toLocaleUpperCase());
 
-// console.log(std);
+console.log(std); */
 //--------------------------------------------
 
 //FILTER
 
-// const students = [
-//   { id: 1, name: "dave", age: 19 },
-//   { id: 2, name: "peter", age: 24 },
-// ];
+/* const students = [
+  { id: 1, name: "dave", age: 19 },
+  { id: 2, name: "peter", age: 24 },
+];
 
-// const stud2 = students.filter(student => student.age > 20);
-// console.log(stud2);
+const stud2 = students.filter(student => student.age > 20);
+console.log(stud2); */
 
 //-----------------------------------------------
 
