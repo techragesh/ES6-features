@@ -95,7 +95,7 @@ console.log(stud2); */
 
 //SPREAD
 
-const num1 = [1, 2, 3];
+/* const num1 = [1, 2, 3];
 const num2 = [num1, 4];
 console.log(num2);
 
@@ -130,4 +130,22 @@ const num5 = [1, 2, 3, 4, 5];
 const num6 = [...num5.filter(n => n !== 4)];
 console.log(num6);
 
-//Output: (4) [1, 2, 3, 5]
+//Output: (4) [1, 2, 3, 5] */
+
+//DESTRUCTURING
+
+//How will do restructuring in react
+
+const college = {
+  name: "St.Josph",
+  address: {
+    street: "Main Road",
+    city: "Texas",
+  },
+  branch: ["CS", "IT"],
+};
+
+const { name, address, branch } = college;
+const { street } = college.address;
+console.log(street);
+console.log(name, address.street, branch[0]);

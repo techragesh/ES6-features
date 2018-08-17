@@ -144,14 +144,14 @@ const num1 = [1, 2, 3];
 const num2 = [num1, 4];
 console.log(num2);
 
-<b>Output :</b> (2) [Array(3), 4] // Which is wrong
+<b>Output :</b> (2) [Array(3), 4] <b>// Which is wrong</b>
 
 I would like to expect the output like this [1,2,3,4]
 const num3 = [1, 2, 3];
 const num4 = [...num3, 4];
 console.log(num4);
 
-<b>Output :</b> (4) [1, 2, 3, 4] // Which is right
+<b>Output :</b> (4) [1, 2, 3, 4] <b>// Which is right</b>
 </pre>
 
 **With objects**
@@ -182,4 +182,28 @@ const num6 = [...num5.filter(n => n !== 4)];
 console.log(num6);
 
 <b>Output:</b> (4) [1, 2, 3, 5]
+</pre>
+
+### DESTRUCTURING
+
+How will do restructuring in react
+
+<pre>
+const college = {
+  name: "St.Josph",
+  address: {
+    street: "Main Road",
+    city: "Texas",
+  },
+  branch: ["CS", "IT"],
+};
+
+const { name, address, branch } = college;
+const { street } = college.address;
+console.log(street);
+console.log(name, address.street, branch[0]);
+
+<b>Output: </b>
+Main Road
+St.Josph Main Road CS
 </pre>
